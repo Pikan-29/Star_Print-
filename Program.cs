@@ -57,36 +57,51 @@ namespace dimondStarprintpractics
              Console.ReadLine();
             */
             // reverse right side triangle
-           /* for (i=n;i>=1;i--)
-            {
-                for (l=1;l<=n-i;l++)
-                {
-                    Console.Write("  ");
-                }
-                for (j=1;j<=i;j++)
-                {
-                    Console.Write("* ");
-                }
-                Console.WriteLine();
-            }
-            Console.ReadLine();
-           */
+            /* for (i=n;i>=1;i--)
+             {
+                 for (l=1;l<=n-i;l++)
+                 {
+                     Console.Write("  ");
+                 }
+                 for (j=1;j<=i;j++)
+                 {
+                     Console.Write("* ");
+                 }
+                 Console.WriteLine();
+             }
+             Console.ReadLine();
+            */
 
             //central triangle pattern
-            for(i=1;i<=n;i++)
+            /*
+             for(i=1;i<=n;i++)
+             {
+                 for (l = 1; l <= n - i; l++)
+                 {
+                     Console.Write("  ");
+                 }
+                 for (j = 1; j <=(2*i-1); j++)
+                 {
+                     Console.Write("* ");
+                 }
+                 Console.WriteLine();
+             }
+             Console.ReadLine();
+            */
+            //reverse central triangle pattern
+            for (i = n; i >= 1; i--)
             {
                 for (l = 1; l <= n - i; l++)
                 {
                     Console.Write("  ");
                 }
-                for (j = 1; j <=(2*i-1); j++)
+                for (j = 1; j <= (2 * i - 1); j++)
                 {
                     Console.Write("* ");
                 }
                 Console.WriteLine();
             }
             Console.ReadLine();
-
 
         }
     }
