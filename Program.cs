@@ -112,28 +112,43 @@ namespace dimondStarprintpractics
                 {
                     Console.Write("  ");
                 }
-                for (j = 1; j <=(2*i-1); j++)
+                for (j = 1; j <= (2 * i - 1); j++)
                 {
-                    Console.Write("* ");
+                    if (j % 2 == 1)
+                    {
+                        Console.Write("1 ");
+                    }
+                    else
+                    {
+                        Console.Write("0 ");
+                    }
+                   
                 }
                 Console.WriteLine();
             }
-                for(i= n-1;i>= 1;i--)
-                {
+            for (i = n - 1; i >= 1; i--)
+            {
                     for (l = 1; l <= n - i; l++)
                     {
                         Console.Write("  ");
                     }
-                    for (j = 1; j <= (2*i-1); j++)
-                    {
-                        Console.Write("* ");
+                    for (j = 1; j <= (2 * i - 1); j++)
+                      {
+                          if (j % 2 == 1)
+                          {
+                             Console.Write("1 ");
+                          }
+                            else
+                            {
+                             Console.Write("0 ");
+                            }
                     }
-                    Console.WriteLine();
-                }
+                    Console.WriteLine();                                   
+            }
             Console.ReadLine();
-        
-            
 
+
+            
         }
     }
 }
