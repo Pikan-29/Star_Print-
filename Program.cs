@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -89,19 +90,49 @@ namespace dimondStarprintpractics
              Console.ReadLine();
             */
             //reverse central triangle pattern
-            for (i = n; i >= 1; i--)
+            /*
+                 for (i = n; i >= 1; i--)
+             {
+                 for (l = 1; l <= n - i; l++)
+                 {
+                     Console.Write("  ");
+                 }
+                 for (j = 1; j <= (2 * i - 1); j++)
+                 {
+                     Console.Write("* ");
+                 }
+                 Console.WriteLine();
+             }
+             Console.ReadLine();
+             */
+            //diamond star pattern
+            for (i = 1; i <= n; i++)
             {
                 for (l = 1; l <= n - i; l++)
                 {
                     Console.Write("  ");
                 }
-                for (j = 1; j <= (2 * i - 1); j++)
+                for (j = 1; j <=(2*i-1); j++)
                 {
                     Console.Write("* ");
                 }
                 Console.WriteLine();
             }
+                for(i= n-1;i>= 1;i--)
+                {
+                    for (l = 1; l <= n - i; l++)
+                    {
+                        Console.Write("  ");
+                    }
+                    for (j = 1; j <= (2*i-1); j++)
+                    {
+                        Console.Write("* ");
+                    }
+                    Console.WriteLine();
+                }
             Console.ReadLine();
+        
+            
 
         }
     }
